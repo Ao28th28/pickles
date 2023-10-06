@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Standard Meta -->
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+
+        <!-- Discord embedding stuff -->
+        <meta content="Prodigy Save Editor" property="og:title" />
+        <meta content="Easily edit your prodigy math game saves online!" property="og:description" />
+        <meta content="#FF0000" data-react-helmet="true" name="theme-color" />
+        <meta content="https://media.discordapp.net/attachments/851171575000596505/865580507425013781/pro_dash_logo.png" property="og:image">
+
+        <!-- Site Properties -->
+        <title>Login</title>
+        <link rel="stylesheet" type="text/css" href="./bootstrap-5.0.2-dist/css/bootstrap.min.css" />
+        <link rel="stylesheet" type="text/css" href="./css/login.css" />
+        <link rel="stylesheet" type="text/css" href="./semantic/semantic.min.css" />
+        <link rel="icon" href="favicon.ico" type="image/x-icon" />
+
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="./bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <script src="./js/login.js" type="text/javascript"></script>
+        <script src="./semantic/semantic.min.js"></script>
+    </head>
+    <body
+        
+        style="background-color: #292828"
+    >
+        <main class="form-signin">
+            <form id="form">
+                <h1 class="h3 mb-3 fw-normal" style="color: white">Please sign in</h1>
+            
+                <div class="form-floating">
+                  <input class="form-control" id="username" placeholder="Username">
+                  <label for="floatingInput">Username</label>
+                </div>
+                <div class="form-floating">
+                  <input type="password" class="form-control" id="password" placeholder="Password">
+                  <label for="floatingPassword">Password</label>
+                </div>
+
+                <button id="submit" class="fluid ui primary button" type="submit" onsubmit="login(event)" onclick="login(event)">Sign in</button>
+              </form>
+        </main>
+    </body>
+</html>
